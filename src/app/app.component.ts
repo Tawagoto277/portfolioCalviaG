@@ -36,11 +36,11 @@ export class AppComponent implements AfterViewInit, AfterViewChecked, OnInit{
 
   onDivScroll(){
     const scrollPosition = this.contentDiv.scrollTop;
-    // console.log("position" + scrollPosition);    
+    console.log("position = " + scrollPosition);    
     const windowHeight = this.contentDiv.clientHeight;
-    // console.log("altezza" + windowHeight);    
+    console.log("altezza = " + windowHeight);    
     const newIndex = Math.floor(scrollPosition / windowHeight);
-    // console.log("index" + newIndex);
+    console.log("index = " + newIndex);
     
     if (newIndex !== this.currentSectionIndex) {
       this.currentSectionIndex = newIndex;
